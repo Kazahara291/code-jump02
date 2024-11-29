@@ -1,0 +1,17 @@
+@mixin breakpoint( $point ) {
+    @if $point == tab {
+      @media  ( min-width: 600px ) {
+        @content ;
+      }
+    }
+    @if $point == pc {
+      @media ( min-width: 769px ) {
+        @content ;
+      }
+    }
+    @if $point == pc-wide {
+      @media screen and ( max-width: 600px ) {
+        @content ;
+      }
+    }
+  }
