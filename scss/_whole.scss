@@ -1,3 +1,5 @@
+@use "global";
+
 html {
     font-size: 100%;
 }
@@ -16,6 +18,20 @@ li {
 
 img {
     width: 100%;
+}
+
+.site-title {
+    line-height: 1px;
+}
+
+.site-title a {
+    display: block;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
 }
 
 .wrapper {
