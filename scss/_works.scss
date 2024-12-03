@@ -1,4 +1,17 @@
+@use "_global.scss" as g;
+
 .works ul {
     display: flex;
     flex-flow: wrap;
+    justify-content: space-between;
+    @include g.breakpoint ( pc-wide ) {
+        flex-direction: column;
+    }
+}
+
+.works li {
+    width: 32%;
+    @include g.breakpoint ( pc-wide ) {
+        width: 100%;
+    }
 }
