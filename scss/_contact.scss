@@ -1,2 +1,19 @@
 @use "_global.scss" as g;
 
+.contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    flex-direction: row;
+    @include g.breakpoint ( pc ) {
+        flex-direction: column;
+    }
+}
+
+.contact dt {
+    width: 15%;
+}
+
+.contact dd {
+    width: 85%;
+}
